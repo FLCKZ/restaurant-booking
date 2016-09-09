@@ -147,14 +147,14 @@ The whole aim of the proposed system is to automatize most of the restaurant`s p
 		\item The system must direct the user to the Terms and conditions page which the user must read and accept before installing the application.
 	\end{itemize}
 \subsection{System Models}
-\subsubsection{Scenarios}
+\subsubsection{Scenario}
 \begin{enumerate}
-	\item Customer downloads and launches application.
-	\item Customer registers using their phone number as login name and creates password.
-	\item Customer logs in and enters wrong password.[\textcolor{blue}{ What happens when a wrong password is entered?}]
-	\item Customer then enters the correct credentials and logs in.
-	\item Customer books a table for 2. [\textcolor{blue}{What happens when a customer books a table? Do they get an SMS confirmation?}]
-	\item Customer logs out.
+	\item Bob wants to make an online reservation to dine at FLCKZ restaurant\\in the evening.
+	\item He acquires the Restaurant booking system on google store using his mobile phone and installs it.\\
+	\item He signs up by proving his identification details.
+	\item He uses the details he provided to identify himself and gain access to the system.
+	\item He makes a reservation for a specific date and time.
+	\item He then closes the system.
 \end{enumerate}
 \subsubsection{Use Case Model}
 \begin{itemize}
@@ -225,7 +225,7 @@ The whole aim of the proposed system is to automatize most of the restaurant`s p
 			\rowcolor{yellow}
 			Use Case UC-2 & :  Login\\
 			\hline
-			Related Requirements & REQ 2\\
+			Related Requirements & REQ 2, REQ 1\\
 			Initiating Actor & User\\
 			Actor`s Goal & To enter correct credentials and gain access to the system.\\
 			Participating Actors & Users, Database\\
@@ -276,13 +276,39 @@ The whole aim of the proposed system is to automatize most of the restaurant`s p
 	\end{tabular}		
 \end{center}
 
+\item   \textit{\textbf{Use Case 4 : Menu}}
+\begin{center}
+	\begin{tabular}{|l l|}
+		
+		\hline
+		\rowcolor{yellow}
+		Use Case UC-4 & :  Menu\\
+		\hline
+		Related Requirements & REQ 4\\
+		Initiating Actor & User\\
+		Actor`s Goal & To view type of food and drinks offered by the restaurant.\\
+		Participating Actors & User, Database\\
+		Preconditions & System is logged into a profile\\
+		Postconditions & System displays available menu\\ & \\
+		\multicolumn{2}{|l|}{\textit{\textbf{Flow of Events for Main success Scenario }}}\\
+		\multicolumn{2}{|l|}{$\to$ $\mathbf{1.}$ User Clicks on the View Menu button }\\
+		\multicolumn{2}{|l|}{$\gets$ $\mathbf{2.}$ The System displays a Menu page }\\ & \\
+		\multicolumn{2}{|l|}{\textit{\textbf{Flow of Events for Extensions (Alternate Scenarios) }}}\\
+		
+		\hline 
+	\end{tabular}		
+\end{center}
+
+\newpage
 
 \item Use Case Diagram
 
+\includegraphics[scale=0.5]{user}\\\\
 \includegraphics[scale=0.5]{usecasediagram}
 %\subsubsection{Analysis Object Model}
 %\subsubsection{Dynamic Model}
 \end{itemize}
+\newpage
 \subsubsection{User interface - navigational paths and screen mock ups}
 \textit{Home Page} \hfill \textit{Register Page} \hfill \textit{Login Page} \\\\
 \includegraphics[scale = 0.5]{mainPage} \hfill
