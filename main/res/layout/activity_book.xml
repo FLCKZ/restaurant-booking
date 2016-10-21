@@ -10,6 +10,7 @@
     tools:context="com.example.leetoxavi.bms.BookActivity">
 
     <LinearLayout
+        android:id="@+id/book_linear_layout"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,7 +18,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="36dp"
-            android:text="BOOK"
+            android:text="@string/book_header"
             android:gravity="center"/>
 
         <ExpandableListView
@@ -27,6 +28,8 @@
             android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
             android:divider="@android:color/darker_gray"
             android:dividerHeight="0.5dp" />
+
+
 
     </LinearLayout>
 
